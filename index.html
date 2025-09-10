@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tela de login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -13,19 +14,22 @@
                 <div class="formulario">
                     <h1>Login</h1>
                     <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                    <form action="login.php" method="post">
-                        <p>
-                            <label for="iusu"></label>
-                            <input type="text" name="usu" id="iusu" placeholder="Usuário" class="texto" required>
-                        </p>
-                        <p>
-                            <label for="isen"></label>
-                            <input type="text" name="sen" id="isen" placeholder="Senha" required class="texto">
-                        </p>
-                        <p>
+                    <form action="login.php" method="post" autocomplete="on">
+                            <div>
+                                <span class="material-symbols-outlined">person</span>
+                                <label for="iusu"></label>
+                                <input type="email" name="usu" id="iusu" placeholder="Usuário" class="texto" autocomplete="email" required>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">vpn_key</span>
+                                <label for="isen"></label>
+                                <input type="password" name="sen" id="isen" placeholder="Senha" required class="texto" autocomplete="current-password" minlength="8" maxlength="15">
+                            </div>
                             <input type="submit" value="Entrar" class="botao">
-                            <input type="submit" value="Esqueci a senha" class="botao">
-                        </p>
+                            <a href="esqueci.html">Esqueci a Senha
+                                <span class="material-symbols-outlined"
+                                > mail</span>
+                            </a>
                         </form>
                 
                 </div>

@@ -5,16 +5,23 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-div.formulario{
+div.formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div.formulario > p{
+    font-size: 0.8em;
     padding: 10px;
-    display: block;
-    
+}
+.formulario{
+    float: bottom;
 }
 body, html{
     background-color: blueviolet;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    
 
 }
 .botao{
@@ -24,6 +31,8 @@ body, html{
     width: 200px;
     height: 30px;
     text-align: center;
+
+    
 }
 .botao:hover{
     background-color: aquamarine;
@@ -33,6 +42,7 @@ body, html{
     height: 200px;
     background-size: cover;
     border-radius: 0px 0px 20px 20px;
+    float: top;
     
     
 }
