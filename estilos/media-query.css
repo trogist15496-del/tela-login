@@ -6,6 +6,7 @@
     }
     section#login{
         width: 90vw;
+        height: 350px;
     }
     section#login > .imagem{
         float: left;
@@ -17,6 +18,9 @@
         float: right;
         width: 70%;
     } 
+    .imagem{
+        border-radius: 0;
+    }
 
 }
 @media screen and (min-width:992px) {
@@ -25,6 +29,7 @@
     }
     section#login{
         width: 950px;
+        height: 400px;
     }
     section#login > .imagem{
         float: right;

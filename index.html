@@ -15,23 +15,22 @@
                     <h1>Login</h1>
                     <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                     <form action="login.php" method="post" autocomplete="on">
-                            <div>
-                                <span class="material-symbols-outlined">person</span>
+                            <div class="texto">
+                                <span class="material-symbols-outlined" id="simbolo">person</span>
                                 <label for="iusu"></label>
-                                <input type="email" name="usu" id="iusu" placeholder="Usuário" class="texto" autocomplete="email" required>
+                                <input type="email" name="usu" id="iusu" placeholder="Usuário" autocomplete="email" required>
                             </div>
-                            <div>
-                                <span class="material-symbols-outlined">vpn_key</span>
+                            <div class="texto">
+                                <span class="material-symbols-outlined" id="simbolo">vpn_key</span>
                                 <label for="isen"></label>
-                                <input type="password" name="sen" id="isen" placeholder="Senha" required class="texto" autocomplete="current-password" minlength="8" maxlength="15">
+                                <input type="password" name="sen" id="isen" placeholder="Senha" autocomplete="current-password" minlength="8" maxlength="15" required >
                             </div>
                             <input type="submit" value="Entrar" class="botao">
-                            <a href="esqueci.html">Esqueci a Senha
+                            <a href="esqueci.html" class="botao">Esqueci a Senha
                                 <span class="material-symbols-outlined"
                                 > mail</span>
                             </a>
                         </form>
-                
                 </div>
                 <div class="imagem">
                 </div>
