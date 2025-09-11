@@ -13,9 +13,7 @@ div.formulario > p{
     font-size: 0.8em;
     padding: 10px;
 }
-
-span#simbolo{
-    
+span#simbolo{    
      font-size: 2em;
      width: 40px;
      padding: 5px;
@@ -25,6 +23,9 @@ body, html{
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .formulario{
     padding: 10px;
@@ -37,9 +38,7 @@ form > input[type=submit]{
     background-color: aqua;
     border: 1px solid rgb(0, 119, 119);
     border-radius: 5px; 
-    margin:2px 2px 2px 0px;
-    
-    
+    margin:2px 2px 2px 0px;    
 }
 form > input[type=submit]:hover{
     background-color: rgb(0, 199, 199);
@@ -56,12 +55,10 @@ form > a.botao{
     border-radius: 8px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding-top: 10px;
-    
+    padding-top: 10px;    
 }
 form > a.botao > span{
-    font-size: 0.8em;
-   
+    font-size: 0.8em;  
 }
 div.texto > span{
     color: white;
@@ -71,8 +68,6 @@ div.texto > span{
     padding: 4px;
     transform: translate(-4px, 2px);
 }
- 
-
 .texto > input {
         height: 100%;
         background-color: rgb(151, 255, 255);
@@ -82,9 +77,6 @@ div.texto > span{
         padding: 10px;
         margin:-5px -5px -6px -5px;
         transform: translate(-5px, -9px);
-        
-        
-
 }
 .texto > input:focus-within{
     background-color: white;
@@ -95,7 +87,8 @@ form > a.botao:hover{
 .imagem{
     background:url('../imagem/imagem.jpg') right no-repeat;
     height: 200px;
-    background-size: cover;  
+    background-size: cover;
+    
 }
 .texto{
     background-color: rgb(0, 73, 73);
@@ -106,24 +99,13 @@ form > a.botao:hover{
     border-radius: 8px;
     height: 100%;
 }
-
-main{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
 section#login{
     background-color: white;
     width: 250px;
     height: 515px;
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-   
+    border-radius: 20px; 
     overflow: hidden;
     box-shadow: 1px 1px 5px black;
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
 }
